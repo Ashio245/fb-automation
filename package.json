@@ -1,0 +1,12 @@
+{
+  "name": "fb-coffee-post",
+  "version": "1.0.0",
+  "description": "Daily coffee + sustainability post to Facebook Page via GitHub Actions",
+  "main": "post.js",
+  "scripts": {
+    "post": "node post.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
