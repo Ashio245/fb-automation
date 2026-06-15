@@ -2,9 +2,9 @@ name: Daily Facebook Post
 
 on:
   schedule:
-    # Runs every day at 10:17 UTC (6:17 PM Philippines Time / PHT)
-    # Non-round minute (17) helps avoid GitHub scheduling queue delays.
-    - cron: "17 10 * * *"
+    # Runs every 5 minutes for rapid testing of the scheduler.
+    # Once we verify it triggers, we will change it back to the daily schedule.
+    - cron: "*/5 * * * *"
   workflow_dispatch: # Manual trigger from GitHub UI
 
 jobs:
