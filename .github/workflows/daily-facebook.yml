@@ -2,9 +2,9 @@ name: Daily Facebook Post
 
 on:
   schedule:
-    # Runs every day at 10:20 UTC (6:20 PM Philippines Time / PHT)
-    # Changed minute to 20 to force GitHub Actions to re-register and resync the cron schedule.
-    - cron: "20 10 * * *"
+    # Runs every day at 12:05 UTC (8:05 PM Philippines Time / PHT)
+    # Offsetting by 5 minutes helps avoid the round-hour queue delay.
+    - cron: "5 12 * * *"
   workflow_dispatch: # Manual trigger from GitHub UI
 
 jobs:
