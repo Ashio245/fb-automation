@@ -14,10 +14,10 @@ function pickRandom(arr) {
 
 function buildCaption(quote) {
   const templates = [
-    `☕ ${quote}\n\n#CoffeeLovers #Sustainability #EcoFriendly`,
-    `🌱 ${quote}\n\n#SustainableCoffee #GreenLiving #FairTrade`,
-    `${quote} ☕🌍\n\n#CoffeeCulture #EcoConscious #BrewGood`,
-    `💚 ${quote}\n\n#EthicalCoffee #SaveThePlanet #CoffeeTime`,
+    `${quote}\n\n#DailyVerse #FaithAndCoffee #MorningGrace #DailyInspiration`,
+    `${quote}\n\n#BibleVerse #MorningDevotion #CoffeeAndJesus #FaithWalk`,
+    `${quote}\n\n#ScriptureOfTheDay #MorningBlessing #GraceAndCoffee #BlessedDay`,
+    `${quote}\n\n#DailyStrength #InspirationalQuotes #DailyGrace #CoffeeLovers`,
   ];
   return pickRandom(templates);
 }
