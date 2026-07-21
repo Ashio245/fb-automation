@@ -1,4 +1,4 @@
-name: Daily Facebook Post
+name: Daily Facebook Post (Provi Beans)
 
 on:
   workflow_dispatch: # Manual trigger from GitHub UI / External API
@@ -16,6 +16,7 @@ jobs:
           node-version: "20"
 
       - name: Post to Facebook
+        working-directory: ./provi-beans
         env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
